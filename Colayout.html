@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>new layout</title>
+    <style>
+    .body{margin: 0px;}
+    .big-div{ 
+      height: 27vh;
+      width: 100vw;
+      display: grid;
+    grid-template-columns: 4fr 4fr 2fr 4fr 4fr ;
+    grid-template-rows: 2fr 2fr 2fr 4fr;
+    gap: 6px;
+    padding: 10px;
+    box-sizing: border-box;}
+    .red1{ background-color: red;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+      .green1{ background-color: #00969c;
+      grid-column-start: 2;
+      grid-column-end: 4;}
+      .orange1{background-color: orange;
+      grid-column-start: 4 ;
+      grid-column-end: 6;
+        
+      }
+      .orange2{background-color: orange;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    
+      }
+      .white1{background-color: grey;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 3;
+      grid-column-end: 5;
+           
+       
+      }
+      .red2{background-color: red;
+        grid-row-start: 2;
+        grid-column-start: 5;
+        grid-row-end: 5;
+      }
+      .White2{background-color: grey;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+        .red3{background-color: red;
+        grid-column-start: 2;
+        grid-column-end: 4;
+          
+        }
+       .green2{background-color: #00969c;
+         
+       }
+       
+      .big-div2{ height: 40vh;
+      width: 100vw;
+      display: grid;
+      grid-template-columns:1fr 1fr 1.2fr 1.4fr ;
+      grid-template-rows: 1fr 7fr 2fr 2fr 1.5fr;}
+     .big-div2 div {color: white;
+       text-align: center;
+      
+     }
+      .header{background-color: #191970;}
+      .menu{background-color: crimson;
+        grid-column-start: 2;
+        grid-column-end: 5;
+      }
+      .hero{background-color: dodgerblue;
+      grid-column-start: 1;
+      grid-column-end: 5;}
+      .main{background-color: #191970;
+      grid-column: 1 / span 2;
+      grid-row: 3 / 5;
+        
+      }
+      .infos{background-color: gainsboro;
+          grid-row: 3 / 5;
+      }
+      .image{background-color: powderblue;
+  grid-row: 3 / 5;
+      }
+      .extra{background-color:lightseagreen ;
+  grid-row: 3 / 5;}
+    </style>
+  </head>
+  <body class="body">
+    <div class="big-div">
+      
+      <div class="red1">Red #1</div>
+       <div class="green1">Green #1</div>
+ <div class="orange1">Orange #1</div>
+ <div class="orange2">Orange #2</div>
+ <div class="white1">White #1</div>
+ <div class="red2">Red #2</div>
+ <div class="White2">white #2</div>
+ <div class="red3">Red #3</div>
+ <div class="green2">Green #2</div>
+ 
+    </div>
+    
+    <div class="big-div2">
+      
+      <div class="header">HEADER</div>
+      <div class="menu">MENU</div>
+<div class="hero">HERO</div>
+<div class="main">MAIN</div>
+<div class="infos">INFO</div>
+<div class="image">IMAGE</div>
+<div class="extra">EXTRAS</div>
+      
+    </div>
+  </body>
+</html>
